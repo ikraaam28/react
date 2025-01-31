@@ -25,3 +25,9 @@ export const calculateTotalScore = (scores) => {
         .filter(score => score > 50)  // Filtrer ceux > 50
         .reduce((total, score) => total + score, 0); // Additionner
 };
+
+// fonction.js
+export const Search = (id, tab) => {
+    return tab.find(item => item.id === id);
+};
+
