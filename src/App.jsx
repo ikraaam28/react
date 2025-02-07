@@ -7,6 +7,7 @@ import GestionnaireNotes from "./Components/GestionnaireNotes.jsx";
 import Hello from "./Components/Hello.jsx";
 import Timer from "./Components/Timer.jsx";
 import TodoList from "./Components/TodoList.jsx";
+import Events from "./Components/atelier2/Events.jsx";
 import Ccounter from "./Components/useCounter.jsx";
 import { findLongestWord, countOccurrences, calculateTotalScore,Search } from "./EcmaScript/functions.js";
 import './app.css';
@@ -68,8 +69,9 @@ console.log( findLongestWord(words));
       <Counter/>
       <Timer/>
       <Ccounter/> */}
-      <GestionnaireNotes initialNotes={[12, 15, 9, 18]} />
-      <TodoList initialTasks={initialTasks} />
+      {/* <GestionnaireNotes initialNotes={[12, 15, 9, 18]} />
+      <TodoList initialTasks={initialTasks} /> */}
+      <Events/>
       </>
     );
 }
