@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Row, Alert } from 'react-bootstrap';
+import { Row, Alert, Container } from 'react-bootstrap';
 import Event from '../atelier2/Event';
 
 const Events = () => {
@@ -23,12 +23,14 @@ const Events = () => {
   };
 
   return (
-    <>
+    <Container>
       {showWelcome && <Alert variant="info">Bienvenue sur la page des événements !</Alert>}
       <Row>
+        
         {events.map(event => <Event key={event.name} event={event} onBook={handleBook} />)}
+       
       </Row>
-    </>
+      </Container>
   );
 };
 

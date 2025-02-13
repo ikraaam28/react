@@ -23,6 +23,7 @@ const Event = ({ event, onBook }) => {
           <Card.Title>{event.name}</Card.Title>
           <Card.Text>{event.description}</Card.Text>
           <Card.Text>Price: {event.price} DT</Card.Text>
+          <Card.Text>nbr  Participants : {event.nbParticipants}</Card.Text>
           <Card.Text>Tickets left: {event.nbTickets}</Card.Text>
           <Button onClick={handleBook} disabled={event.nbTickets === 0}>
             {event.nbTickets === 0 ? 'Sold Out' : 'Book an event'}
